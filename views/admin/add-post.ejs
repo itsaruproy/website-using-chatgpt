@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Post</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center my-5">Add Post</h1>
+            <form action="/admin/add-post" method="post">
+                <div class="form-group">
+                    <label for="heading">Heading</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="heading"
+                        name="heading"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="body">Body</label>
+                    <textarea
+                        class="form-control"
+                        id="body"
+                        name="body"
+                        rows="3"
+                        required
+                    ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+        </div>
+    </body>
+</html>
